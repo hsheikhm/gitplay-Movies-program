@@ -10,11 +10,13 @@ movies = {
   Gladiator: 5
 }
 
-puts "What would you like to do?"
-puts "-- Type 'add' to add a movie."
-puts "-- Type 'update' to update a movie."
-puts "-- Type 'display' to display all movies."
-puts "-- Type 'delete' to delete a movie."
+puts """
+What would you like to do? Please choose from the following 4 options:
+
+-- Type 'add' if you wish to add a movie to the listing.
+-- Type 'update' if you wish to update an existing movie on the listing.
+-- Type 'display' if you wish to see all existing movies on the listing.
+-- Type 'delete' if you wish to remove an existing movie from the listing."""
 
 choice = gets.chomp.downcase
 case choice
@@ -54,5 +56,9 @@ when 'delete'
     puts "#{title} has been removed."
   end
 else
-  puts "Sorry, I didn't understand you."
+  puts "Sorry, I didn't understand you. You must choose from the folloing four optons:
+  -- Type 'add' if you wish to add a movie to the listing.
+  -- Type 'update' if you wish to update an existing movie on the listing.
+  -- Type 'display' if you wish to see all existing movies on the listing.
+  -- Type 'delete' if you wish to remove an existing movie from the listing."
 end

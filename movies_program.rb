@@ -1,7 +1,13 @@
 movies = {
   Memento: 3,
   Primer: 4,
-  Ishtar: 1
+  Ishtar: 1,
+  Superman: 4,
+  Inception: 3,
+  Batman: 5,
+  Titanic: 3,
+  Speed: 4,
+  Gladiator: 5
 }
 
 puts "What would you like to do?"
